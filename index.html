@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Code Review</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -28,12 +31,12 @@
     <form action="index.html" method="post">
         <fieldset>
             <legend class="content_headings">Contact Information</legend>
-
+            
             <label for="name">Full Name</label>
-            <input type="text" id="name" name="user_name" placeholder="Required"> 
+            <input type="text" id="name" name="user_name" placeholder="Required" required> 
 
             <label for="email">Email Address</label>
-            <input type="text" id="email" name="user_email" placeholder="Required"> 
+            <input type="text" id="email" name="user_email" placeholder="Required" required> 
 
             <label for="phone">Phone Number</label>
             <input type="text" id="phone" name="user_phone">
@@ -102,7 +105,6 @@
             <label for="zip-code">Zip Code</label>
             <input type="text" id="zip-code" name="user_zip" class="zip_code">
 
-
         </fieldset>
         
         <hr  class="sub-hr">
@@ -111,36 +113,44 @@
             <legend class="content_headings">Newsletter</legend>
             <p class="news_letter">Select the newsletters you would like to receive</p>
 
-            <input type="checkbox" id="html_news" value="newsletter_interest">
+            <div class="form_section">
+
+            <input type="checkbox" id="html_news" name="html_news" value="html">
             <label for="html_news">Html News</label>
              <br>
             
-             <input type="checkbox" id="css_news" value="newsletter_interest">
+             <input type="checkbox" id="css_news" name="css_news" value="css">
             <label for="css_news">CSS News</label>
              <br>
             
-             <input type="checkbox" id="javascript_news" value="newsletter_interest">
+             <input type="checkbox" id="javascript_news" name="javascript_news" value="javascript">
             <label for="javascript_news">Javascript News</label>
              <br>
             
             <p class="news_letter">Newsletter format</p>
 
-            <input type="radio" id="html_format" value="newsletter_format">
+            <input type="radio" id="html_format" name="newsletter_format" value="html">
             <label for="html_format">HTML</label>
              <br>
 
-             <input type="radio" id="plain_format" value="newsletter_format">
+             <input type="radio" id="plain_format" name="newsletter_format" value="plain">
             <label for="plain_format">Plain text</label>
              <br>
 
+            </div>
+
             <p class="news_letter">Other topics you'd like to hear about</p>
+           
             <label for="textarea"></label>
-            <textarea id="textarea" name="other_topics"></textarea>
+            <textarea id="textarea" name="other_topics" placeholder="Comment"></textarea>
 
         </fieldset>
 
         <button type="submit">Sign Up</button>
     </form>
+
+
+
 </main>
 
 <footer>Copyright The Code Review</footer>
