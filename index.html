@@ -21,8 +21,8 @@
 
     <main class="main_container">
 
-        <section class="intro-section">
-            <h2 class="secondary_heading">Signup for our Newsletter</h2>
+        <section>
+            <h2 class="headings">Signup for our Newsletter</h2>
             <p>Get the latest news on how your code is doing right in your inbox </p>
         </section>
 
@@ -31,9 +31,9 @@
 
         <form action="index.html" method="post">
             <fieldset>
-                <legend class="content_headings">Contact Information</legend>
+                <legend class="headings">Contact Information</legend>
 
-                <label for="name">Full Name</label>
+                <label for="name" class="contact_label">Full Name</label>
                 <input 
                     type="text" 
                     id="name" 
@@ -41,9 +41,10 @@
                     placeholder="Required" 
                     pattern="[A-Za-z]+[ ][A-Za-z]+"
                     required
+                    class="contact_input"
                 >
 
-                <label for="email">Email Address</label>
+                <label for="email" class="contact_label">Email Address</label>
                 <input 
                     type="email" 
                     id="email" 
@@ -52,20 +53,39 @@
                     minlength="11" 
                     maxlength="30"
                     required
+                    class="contact_input"
                 >
 
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="user_phone" placeholder="Your Phone Number">
+                <label for="phone" class="contact_label">Phone Number</label>
+                <input 
+                type="tel" 
+                id="phone" 
+                name="user_phone" 
+                placeholder="Your Phone Number"
+                class="contact_input"
+                >
 
-                <label for="address">Street Address</label>
-                <input type="text" id="address" name="user_address" placeholder="Your Address">
+                <label for="address" class="contact_label">Street Address</label>
+                <input 
+                type="text" 
+                id="address" 
+                name="user_address" 
+                placeholder="Your Address"
+                class="contact_input"
+                >
 
-                <label for="city">City</label>
-                <input type="text" id="city" name="user_city" placeholder="Your City">
+                <label for="city" class="contact_label">City</label>
+                <input 
+                type="text" 
+                id="city" 
+                name="user_city" 
+                placeholder="Your City"
+                class="contact_input"
+                >
 
 
-                <label for="state">State</label>
-                <select name="user_state" id="state">
+                <label for="state" class="contact_label">State</label>
+                <select name="user_state" id="state" class="contact_input">
                     <option value="" disabled selected>Choose State</option>
                     <option value="alabama">Alabama</option>
                     <option value="alaska">Alaska</option>
@@ -119,15 +139,20 @@
 
 
                 <label for="zip-code">Zip Code</label>
-                <input type="number" id="zip-code" name="user_zip" class="zip_code" placeholder="Your Zip Code">
+                <input 
+                type="number" 
+                id="zip-code" 
+                name="user_zip" class="zip_code"
+                 placeholder="Your Zip Code"
+                 >
 
             </fieldset>
 
             <hr class="sub-hr">
 
             <fieldset>
-                <legend class="content_headings">Newsletter</legend>
-                <p class="news_letter">Select the newsletters you would like to receive</p>
+                <legend class="headings">Newsletter</legend>
+                <p>Select the newsletters you would like to receive</p>
 
                 <div class="form_section">
 
@@ -155,7 +180,7 @@
 
                 </div>
 
-                <p class="news_letter">Other topics you'd like to hear about</p>
+                <p>Other topics you'd like to hear about</p>
 
                 <label for="textarea"></label>
                 <textarea id="textarea" name="other_topics" placeholder="Comment"></textarea>

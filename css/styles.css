@@ -26,19 +26,13 @@ body {
     font-size: 25px;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 2px;
 }
 
-.secondary_heading {
-    font-size: 20px;
-    font-weight: 700;
-    color: black;
-}
-
-.intro-section {
+p {
     padding: 5px;
-    text-align: center;
     line-height: 1.5;
+    margin-bottom: 12px;
+    margin-top: 12px;
 }
 
 .main_hr {
@@ -51,10 +45,10 @@ body {
     margin-bottom: 20px;
 }
 
-.content_headings {
+.headings {
     font-weight: 700;
-    font-size: 25px;
-    margin-bottom: 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
     color: black;
 
 }
@@ -153,15 +147,11 @@ input:required:invalid:focus {
     width: 50%;
 }
 
-label[for="zip-code"]{
+label[for="zip-code"] {
     display: block;
     width: 100%;
 }
 
-.news_letter {
-    margin-bottom: 12px;
-    margin-top: 15px;
-}
 
 .form_section {
     background-color: hsla(213, 35%, 63%, 0.2);
@@ -214,5 +204,65 @@ footer {
 
 }
 
-/* @media only screen and (min-width: 768px){} */
-/* @media only screen and (min-width: 1024px){} */
+@media only screen and (min-width: 768px) {
+    form {
+        width: 65%;
+        align-self: center;
+
+    }
+
+    section {
+        text-align: center;
+    }
+
+    hr {
+        width: 65%;
+        margin: auto;
+    }
+
+    fieldset+.sub-hr {
+        width: 100%;
+    }
+
+    fieldset {
+        width: 100%;
+    }
+
+
+    .contact_input {
+        display: inline-block;
+        width: 75%;
+        padding: 12px;
+        transform: translateX(10px);
+    }
+
+    .contact_label,
+    label[for="zip-code"] {
+        display: inline-block;
+        width: 20%;
+        font-size: 12px;
+    }
+
+    .zip_code {
+        display: inline-block;
+        width: 25%;
+    }
+
+    input::placeholder {
+        font-size: 12px;
+    }
+
+    textarea {
+        height: 70%;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+}
